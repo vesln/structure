@@ -61,7 +61,7 @@ var time = new Time(6, 30, 0);
 
 ```js
 time.each(function(key, value) {
-  res.push(key, value);
+  console.log(key, value);
 });
 ```
 
