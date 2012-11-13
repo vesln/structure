@@ -6,6 +6,10 @@ Struct generator.
 
 ## Synopsis
 
+```js
+var struct = require('structure');
+```
+
 ### Creating a new struct
 
 ```js
