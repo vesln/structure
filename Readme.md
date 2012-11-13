@@ -83,6 +83,12 @@ time.toJSON() // => { hours: 6, minutes: 30, seconds: 0 }
 time.toString() // => [object Time <hours="6", minutes="30", seconds="0">]
 ```
 
+## Installation
+
+```bash
+$ npm install structure
+```
+
 ## Requirements
 
 - Node.js >= 0.6.0
