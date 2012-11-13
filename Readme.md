@@ -2,7 +2,86 @@
 
 # structure
 
+Struct generator.
+
 ## Synopsis
+
+### Creating a new struct
+
+```js
+var Time = struct('Time')
+  .attr('hours')
+  .attr('minutes')
+  .attr('seconds')
+  .compile();
+
+var time = new Time(6, 30, 0);
+
+// Getters
+
+time.hours() // 6
+time.minutes() // 30
+time.seconds() // 0
+
+// Setters
+
+time.hours(3)
+time.minutes(0)
+time.seconds(0)
+
+// Also..
+
+time.hours(3).minutes(0).seconds(0)
+```
+
+### Default values
+
+```js
+var Time = struct('Time')
+  .attr('hours')
+  .attr('minutes', 0)
+  .attr('seconds', 0)
+  .compile();
+
+var time = new Time(6);
+
+time.hours() // 6
+time.minutes() // 0
+time.seconds() // 0
+```
+
+### Short syntax
+
+```js
+var Time = struct('Time', 'hours', 'minutes', 'seconds')
+var time = new Time(6, 30, 0);
+```
+
+### each
+
+```js
+time.each(function(key, value) {
+  res.push(key, value);
+});
+```
+
+### toArray
+
+```js
+time.toArray() // => [6, 30, 0]
+```
+
+### toJSON
+
+```js
+time.toJSON() // => { hours: 6, minutes: 30, seconds: 0 }
+```
+
+### toString
+
+```js
+time.toString() // => [object Time <hours="6", minutes="30", seconds="0">]
+```
 
 ## Requirements
 
@@ -14,6 +93,11 @@
 $ npm install
 $ make test
 ```
+
+## TODO
+
+- Browser support
+- #equals
 
 ## License
 

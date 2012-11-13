@@ -1,7 +1,7 @@
 {
   "name": "structure",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Generator of struct classes, each one of which is defined to hold a set of variables and their accessors.",
   "main": "./index.js",
   "homepage": "https://github.com/vesln/structure",
   "scripts": {
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "https://github.com/vesln/structure"
   },
-  "keywords": [],
+  "keywords": ["struct", "structure"],
   "dependencies": {
     "super": "~0.2.1"
   },
