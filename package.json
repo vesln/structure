@@ -1,0 +1,27 @@
+{
+  "name": "structure",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./index.js",
+  "homepage": "https://github.com/vesln/structure",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vesln/structure"
+  },
+  "keywords": [],
+  "dependencies": {
+    "super": "~0.2.1"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*"
+  },
+  "author": "Veselin Todorov <hi@vesln.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.6.0"
+  }
+}
